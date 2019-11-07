@@ -1,9 +1,12 @@
 //Premenné
 var a = 1;
 var b = 2;
-var d = new Date();
 var d = [1, 2, 3, 4];
-var n = d.getHours();
+var d0 = [1, 2, 3, 4];
+var d1 = [2, 4, 6, 8];
+var d2 = [4, 3, 2, 1];
+var e = new Date();
+var n = e.getHours();
 //Funkcie 
 function wtf1()
 { 
@@ -59,14 +62,43 @@ function wtf7()
 function wtf8()
 {   
     //array.map
-    const mapa = d.map(x => x * 2); 
-    alert(mapa);  
+    const m = d.map(x => x * 2); 
+    alert(m);  
 }
 function wtf9(item, index, arr)
 {   
     //array.forEach
-    const mapa1 = d.forEach(arr[index] = item * 10);
-    alert(mapa1);  
+    const m1 = d.forEach(arr[index] = item * 10);
+    alert(m1);  
 }
-
+function wtf10() 
+{
+    //array.find
+    var m2 = d.find(function(element) { 
+        return element > 3; 
+    }); 
+    alert(m2);
+}
+function wtf11() 
+{
+    //array.findindex
+    var m3 = d.findindex(3) 
+    alert(m3);
+}
+//array.push
+var m4 = d0.push(5) 
+function wtf12() 
+{
+    alert(m4);
+}
+function wtf12a() 
+{
+    alert(d0);
+}
+function wtf13() 
+{
+    //array.join
+    var m5 = d.join("+a, ") 
+    alert(m5);
+}
 //console.log("Funguje mi to")

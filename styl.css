@@ -1,4 +1,11 @@
-.nadpis {
+h1.Nadpis 
+{
     color: red;
+    font: Arial;
+}
+p.Odstavec 
+{
+    font-weight: bold;
+    color: blue;
     font: Arial;
 }
